@@ -38,7 +38,7 @@
                                         </td>
                                         <td>{{ $product->title }}</td>
                                         <td>{{ "Rp " . number_format($product->price,2,',','.') }}</td>
-                                        <td>{{ $product->stock }}</td>
+                                        <td>{{ number_format($product->stock) }}</td>
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('product.destroy', $product->id) }}" method="POST">
                                                 <a href="{{ route('product.show', $product->id) }}" class="btn btn-sm btn-dark">SHOW</a>

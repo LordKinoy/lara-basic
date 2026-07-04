@@ -28,7 +28,7 @@
                             <p>{!! $product->description !!}</p>
                         </code>
                         <hr/>
-                        <p>Stock : {{ $product->stock }}</p>
+                        <p>Stock : {{ number_format($product->stock) }}</p>
                     </div>
                 </div>
             </div>
